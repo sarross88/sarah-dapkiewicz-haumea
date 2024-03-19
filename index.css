@@ -1,0 +1,122 @@
+body {
+ background-color: #1F1F1F;
+ color: whitesmoke;
+ font-family: "Source Code Pro", monospace;
+ font-optical-sizing: auto;
+ font-weight: 400;
+ font-style: normal;
+}
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0;
+}
+.navbar .left {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1.75px;
+    color: #C183BC;
+}
+.left span {
+    font-size: 18px;
+}
+.navbar .right{
+width: 300px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+} 
+
+.navbar .right img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar .right .git {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .right a {
+    text-decoration: none;
+    color: #C183BC;
+}
+
+.navbar .right a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 60px;
+ 
+}
+h1 span {
+    font-size: 33px;
+}
+
+section{
+
+}
+
+ul { list-style: none;}
+
+.links li {
+    display: inline-block;
+}
+
+.links img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer {
+    padding: 64px;
+    text-align: center;
+}
+
+.footer img {
+    width: 15px;
+    height: 15px;
+}
+
+.background {
+    color: #1F1F1F;
+}
+.salmon {
+    color: #F88070;
+}
+.gold {
+    color:#FDD10D;
+}
+.blue {
+    color: #569CD6;
+}
+.violet {
+    color: #C183BC;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding: 30px;
+        font-size: 16px;
+    }
+    .footer img {
+        width: 8px;
+        height: 8px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    
+}
