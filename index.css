@@ -6,7 +6,7 @@ body {
  font-weight: 400;
  font-style: normal;
 }
-.container {
+.all-content-wrapper {
     max-width: 90%;
     margin: 0 auto;
     padding: 0 16px;
@@ -18,7 +18,7 @@ body {
     padding: 64px 0;
 }
 .navbar .left {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: -1.75px;
     color: #C183BC;
@@ -50,19 +50,26 @@ align-items: center;
 }
 
 .navbar .right a:hover {
+    padding-bottom: 3px;
     text-decoration: underline;
 }
-
+.title {
+    display: flex;
+}
+.headshot {
+    width: 150px;
+    border-radius: 10% 20% 50% 70%;
+}
 h1 {
-    font-size: 60px;
+    font-size: 40px;
  
 }
 h1 span {
     font-size: 33px;
 }
 
-section{
-
+.about {
+    max-width: 60%;
 }
 
 ul { list-style: none;}
