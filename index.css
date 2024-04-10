@@ -7,11 +7,8 @@ body {
  font-style: normal;
  margin: 0;
  padding: 0;
-}
-.all-content-wrapper {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 0 16px;
+ display: flex;
+flex-direction: column;
 }
 
 /*Navbar*/
@@ -19,39 +16,52 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    margin: 30px 0px 30px 0px;
+    max-width: 100vw;
+    padding: 1% 5% 1% 5%;
     align-items: center;
+    text-transform: uppercase;
+    background-color: #1F1F1F;
+    position: fixed;
+    top: 0;
 }
 .navbar .left {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: -1.75px;
     color: #C183BC;
+    border: .1px solid;
+border-color: gray;
 }
 .left span {
-    font-size: 18px;
+    font-size: 12px;
 }
 .navbar .right{
-width: 300px;
 display: flex;
 justify-content: space-between;
+border: .1px solid;
+border-color: gray;
 } 
-
-.navbar .right .git {
-    width: 40px;
-    height: 40px;
-}
 
 .navbar .right a {
     text-decoration: none;
     color: #C183BC;
+    padding: 8px 16px;
+    border-right: 1px solid #3f3f3f;
 }
 
 .navbar .right a:hover {
     padding-bottom: 3px;
     text-decoration: underline;
 }
+
+
+.all-content-wrapper {
+    max-width: 90%;
+    margin: 5% auto;
+    padding: 0 16px;
+}
+
+
 /*Main content wrapper*/
 
 .flex-content-container {
@@ -139,6 +149,9 @@ h1 span {
 
 /*Experience*/
 
+
+
+
 .position {
     border-bottom: 2px solid white;
     padding: 1rem 0px 1rem 0px;
@@ -154,6 +167,22 @@ h1 span {
     font-size: 1rem;
     font-weight: 300;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns */
+    gap: 10px; /* Gap between columns */
+  }
+  .job {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns within each job row */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .job-dates {
+    font-weight: bold;
+  }
 
 /*icons flex*/
 
