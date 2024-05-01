@@ -345,15 +345,18 @@ footer {
 @media only screen and (max-width: 856px) {
     body{
       background-color: purple;
+      margin: 0;
+      padding: 0;
     }
     /*NAVBAR*/
     .navbar{
         flex-direction: column;
+        display: none;
       }
-      .left {
+    .navbar .left {
         text-align: center;
       }
-   .right {
+    .navbar .right {
         flex-direction: column;
         width: 100%;
         align-items: center;
@@ -365,13 +368,14 @@ footer {
         border: 0;
         color: #a3d0f6;
       }
-      .navbar .right a:hover {
+    .navbar .right a:hover {
         padding-bottom: 1px;
         border-bottom: 2.5px solid #a3d0f6;;
      }
      /*Unseen Navbar placeholder*/
      .navbar-under {
         flex-direction: column;
+        max-width: 100%;
       }
       .navbar-under .left {
         text-align: center;
@@ -392,6 +396,7 @@ footer {
         padding-bottom: 1px;
         border-bottom: 2.5px solid #a3d0f6;;
      }
+
      /*MAIN*/
      .main-content-wrapper {
         padding: 1em;
@@ -481,13 +486,19 @@ footer {
   @media only screen and (max-width: 320px) {
     body{
         background-color: pink;
-        /*Main*/
+        margin: 0 auto;
+        padding: 0;
+        width: 100vw;
       }
+    
       .main-content-wrapper {
-        width: 100%;
+        min-width: 100%;
+        margin: 0;
      }
      .all-content-wrapper {
-        width: 100%;
+        min-width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
+    .flex-content-container {}
 }
