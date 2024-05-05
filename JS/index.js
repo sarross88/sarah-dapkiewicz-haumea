@@ -1,4 +1,4 @@
-alert("Hello! I am an alert box!!");
+
 
 /*Date Setup*/
 const currentDate = new Date();
@@ -6,38 +6,11 @@ const currYear = currentDate.getFullYear();
 
 const footer = document.createElement("footer");
 const copyright = document.createElement("p");
-copyright.innerHTML = `<small>Sarah Dap &copy; ${currYear}</small>`
+copyright.innerHTML = `<small>Website created by Sarah Dapkiewicz &copy; ${currYear}</small>`
 
 footer.appendChild(copyright);
 document.body.appendChild(footer);
 
-/*const date = document.createElement('div');
-date.innerHTML = `${currYear}`;
-footer.appendChild(date);*/
-
-/*Copyright*/
-
-
-/*const sup = document.querySelector('sup');
-const img = document.createElement('img');
-img.src = images/salmonCopyright.png;
-sup.appendChild(img);*/
-
-/*Skill Section*/
-
-/*let skills = ["JavaScript", "HTML", "CSS", "Adobe XD", "GitHub"];
-
-let skillsSection = document.getElementById('skills-section');
-
-
-let skillsList = document.querySelector("#myList");
-
-
-for (i = 0; i < skills.length; ++i) {
-    let skill = document.createElement('li');
-    skill.innerText = skills[i];
-    skillsList.appendChild(skill);
-}*/
 
 let skills = ["HTML", "CSS", "Javascript", "GitHub", "AdobeXD", "Webflow"];
 let skillsSection = document.getElementById("skills");
@@ -50,3 +23,55 @@ for (let skill of skills) {
     skillItem.innerText = skill; 
     skillsList.appendChild(skillItem);
 }
+
+/* FORM */
+
+const usersName = document.getElementById("usersName");
+const form = document.getElementById("leave_message");
+const usersMessage = document.getElementById('usersMessage');
+const btnSubmit = document.getElementById('btnSubmit');
+const ulMessage = document.getElementById('ulMessage');
+const leaveMessage = document.getElementById('leave_message');
+const logMessageSection = document.getElementById('messages');
+
+function messageSubmit (event) {
+    event.preventDefault();
+
+    let name = event.target.usersName.value;
+    let email = event.target.usersEmail.value;
+    let logMessage =  event.target.usersMessage.value;
+    console.log(name, email, logMessage);
+
+    form.reset();
+    let newMessage = document.createElement("li");
+    newMessage.innerHTML = `<a href="mailto:${email}">${name}</a>: <span>${logMessage}</span>`;
+
+    const removeButton = document.createElement('button');
+        removeButton.innerText = 'remove';
+        removeButton.type = 'button';
+        removeButton.addEventListener('click', function () {
+            const entry = removeButton.parentNode;
+            entry.remove();
+        });
+
+    newMessage.appendChild(removeButton);
+    ulMessage.appendChild(newMessage);
+
+};
+
+form.addEventListener("submit", messageSubmit);
+
+/*API photo*/
+
+const img = document.getElementById('gif');
+
+fetch('https://api.giphy.com/v1/gifs/translate?api_key=8SqL9qrrx5SB81E84CQ5S8dJMLft9VRf&s=cat', {mode: 'cors'})
+.then(function(response) {
+  return response.json()
+})
+.then(function(response) {
+  img.src = response.data.images.original.url
+})
+.catch(e => {
+  console.log(e)
+})
