@@ -75,3 +75,32 @@ fetch('https://api.giphy.com/v1/gifs/translate?api_key=8SqL9qrrx5SB81E84CQ5S8dJM
 .catch(e => {
   console.log(e)
 })
+
+/*Git Hub stuff*/
+
+
+
+async function getGithubRepo() {
+    try {    
+      const response = await fetch('https://api.github.com/users/sarross88/repos');
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(response.status);  
+      }
+      console.log(data[0].html_url);
+      console.log(data[1].html_url);
+
+    /*const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    for (let i = 0; i < data.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = data[i].html_url;
+        projectList.appendChild(project);
+    }*/
+
+    } catch (error) {
+      alert('Could not fetch user, try resetting your connection');
+      console.error(error);  
+    } 
+  }
+  getGithubRepo(); 
