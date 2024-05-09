@@ -90,13 +90,13 @@ async function getGithubRepo() {
       console.log(data[0].html_url);
       console.log(data[1].html_url);
 
-    /*const projectSection = document.getElementById("projects");
+    const projectSection = document.getElementById("projects");
     const projectList = projectSection.querySelector("ul");
     for (let i = 0; i < data.length; i++) {
         const project = document.createElement("li");
         project.innerText = data[i].html_url;
         projectList.appendChild(project);
-    }*/
+    }
 
     } catch (error) {
       alert('Could not fetch user, try resetting your connection');
