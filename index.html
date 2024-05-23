@@ -14,6 +14,16 @@
 </head>
 
 <body>
+    <!--Extention of hamburger navbar-->
+    <div class="off-screen-menu">
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#connect">Connect</a>
+    </div>
+       </div>
     <!--This navbar serves as a placeholder to the main content, unseen-->
     <header class="navbar-under">
         <div class="left"> <span class="blue">!DOCTYPE html</span> Sarah Dapkiewicz</div>
@@ -23,6 +33,12 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#connect">Connect</a>
+              <!--Hamburger Menu on small screens-->
+              <div class="blank ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
     <header class="navbar">
@@ -39,9 +55,10 @@
         <div class="flex-content-container">
             <div class="left-icons">
                 <div class="left-images">
-                    <img src="icons/icons8-paper-50.png" alt="">
-                    <img src="icons/icons8-bug-48.png" alt="">
-                    <img src="icons/icons8-four-squares-50.png" alt="">
+                    <img id="paper" src="icons/icons8-paper-50.png" alt="">
+                    <img id="bug" src="icons/icons8-bug-48.png" alt="">
+                    <img id="squares" src="icons/icons8-four-squares-50.png" alt="">
+                    <img id="toggleDN" src="icons/icons8-sun.svg" alt="">
                 </div>
             </div>
             <div class="middle-sidebar">
@@ -55,10 +72,12 @@
                 <div class="main-content-wrapper">
 
                     <div class="hero-image">
+                        <div class="headshot-background">
                         <img class="headshot" src="images/profilepic.png" alt="">
+                        </div>
                         <h1 class="violet"> Sarah Dapkiewicz's Portfolio</h1>
                     </div>
-                    <section id="about" class="about">
+                    <section id="about" class="about hidden">
                         <h2>About</h2>
                         <p class="quote"> Hello there! I'm a millennial with a curious mind and a knack
                             for understanding both people and how things work. With a
@@ -70,7 +89,7 @@
                     </section>
 
 
-                    <section id="experience" class="experience">
+                    <section id="experience" class="experience hidden">
                         <h2>Experience</h2>
                         <div class="grid-container">
                             <div class="job">
@@ -134,7 +153,7 @@
                         </div>
                     </section>
 
-                    <section id="interests" class="interests">
+                    <section id="interests" class="interests hidden">
                         <h2>Interests</h2>
                         <div class="container-icons small">
                             <div><img src="icons/icons8-art-64.png" /></div>
@@ -148,7 +167,7 @@
                         </div>
                     </section>
 
-                    <section class="education">
+                    <section class="education hidden">
                         <h2> Education</h2>
                         <div class="grid-container">
                             <div class="job">
@@ -176,7 +195,7 @@
 
                     </section>
 
-                    <section id="skills" class="programming-skills">
+                    <section id="skills" class="programming-skills hidden">
                         <h2>Programming Skills</h2>
                         <div class="container-icons">
                             <div><img src="icons/css.svg" /></div>
@@ -189,14 +208,32 @@
                     </section>
 
 
-                    <section id="projects" class="projects">
-                        <h2>Projects</h2>
-                        <ul></ul>
+                    <section id="projects" class="projects hidden">
+                        <h2>GitHub Projects</h2>
+                        <ul class="projects-list"></ul>
                     </section>
 
+                    <section id="submit-message" class="submit-message hidden">
+                        <h2>Leave me a Message</h2>
+                        <form id="leave_message" action="">
+                            <label for="usersName">Name:</label><br>
+                            <input id="usersName" type="text" name="usersName" required><br>
+                            <label for="usersEmail">Email:</label><br>
+                            <input id="usersEmail" type="email" name="usersEmail" required><br>
+                            <label for="usersMessage">Message:</label> <br>
+                            <textarea id="usersMessage" name="usersMessage" cols="30" rows="10" required></textarea><br>
+                            <button id="btnSubmit" type="submit">Submit</button>
+                        </form>
+                    </section>
 
-                    <section id="connect" class="connect">
-                        <h2> Connect</h2>
+                    <section id="messages">
+                        <h2>"Bye for now!"</h2>
+                        <ul id="ulMessage"></ul>
+                    </section>
+
+                    <img class="hidden" id="gif" src="" alt="">
+                    <section id="connect" class="connect hidden">
+                        <h2>Let's Connect!</h2>
                         <ul class="links">
                             <li class="linkedin">
                                 <a href="https://www.linkedin.com/in/sarah-dapkiewicz-4b077566/"><img
@@ -209,24 +246,6 @@
                         </ul>
                     </section>
 
-                    <section>
-                        <form id="leave_message" action="">
-                            <label for="usersName">Name:</label><br>
-                            <input id="usersName" type="text" name="usersName" required><br>
-                            <label for="usersEmail">Email:</label>
-                            <input id="usersEmail" type="email" name="usersEmail" required><br>
-                            <label for="usersMessage">Message:</label> <br>
-                            <textarea id="usersMessage" name="usersMessage" cols="30" rows="10" required></textarea><br>
-                            <button id="btnSubmit" type="submit">Submit</button>
-                        </form>
-                    </section>
-
-                    <section id="messages">
-                        <h2>Messages</h2>
-                        <ul id="ulMessage"></ul>
-                    </section>
-
-                    <img id="gif" src="" alt="">
                 </div>
             </main>
         </div>
