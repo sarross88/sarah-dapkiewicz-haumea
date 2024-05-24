@@ -21,7 +21,7 @@
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#connect">Connect</a>
+            <a href="#submit-message">Connect</a>
     </div>
        </div>
     <!--This navbar serves as a placeholder to the main content, unseen-->
@@ -32,7 +32,7 @@
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#connect">Connect</a>
+            <a href="#submit-message">Connect</a>
               <!--Hamburger Menu on small screens-->
               <div class="blank ham-menu">
                 <span></span>
@@ -48,7 +48,7 @@
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#connect">Connect</a>
+            <a href="#submit-message">Connect</a>
         </nav>
     </header>
     <div class="all-content-wrapper">
@@ -62,14 +62,30 @@
                 </div>
             </div>
             <div class="middle-sidebar">
-                <h6>EXPLORER</h6>
-                <h4 class="gray">index.html</h4>
-                <h4><span>#</span>index.css</h4>
-                <h4>app.js</h4>
+                <div id="middle-sidebar-content">
+                <h6 class="middle-menu-text">EXPLORER</h6>
+                <h4 id="middle-html" class="middle-menu-text gray">index.html</h4>
+                <h4 class="middle-menu-text"><span>#</span>index.css</h4>
+                <h4 class="middle-menu-text">app.js</h4>
+                <h4 class="middle-menu-text">README.md</h4>
+            </div>
+                <div id="extensions-middle" class="hide-extensions"> 
+                    <h5 class="extenionMain">EXTENSIONS</h5>
+    
+                    <h5 class="extenionMain">INSTALLED<i class="arrow down"></i></h5>
+                    <h4 class="extenionHeader">Live Server</h4>
+                    <p class="extenionParagraph">Launch a ...<br>
+                    Prettier
+                    </p>
+                    <h4 class="extenionHeader">Prettier</h4>
+                    <p class="extenionParagraph">Code Formatter...<br>
+                    Ritwick Dey
+                    </p>
+                </div>
             </div>
             <main class="main-content">
-                <h4 class="gray tab-html">index.html</h4>
-                <div class="main-content-wrapper">
+                <h4 id="main-section-html-tab" class="gray tab-html">index.html</h4>
+                <div id="main-content-wrapper" class="main-content-wrapper">
 
                     <div class="hero-image">
                         <div class="headshot-background">
@@ -79,7 +95,7 @@
                     </div>
                     <section id="about" class="about hidden">
                         <h2>About</h2>
-                        <p class="quote"> Hello there! I'm a millennial with a curious mind and a knack
+                        <p id="quote" class="quote"> Hello there! I'm a millennial with a curious mind and a knack
                             for understanding both people and how things work. With a
                             background in hygiene, where I've spent plenty of time
                             in people's mouths and minds, I'm now venturing into
@@ -167,7 +183,7 @@
                         </div>
                     </section>
 
-                    <section class="education hidden">
+                    <section id="education" class="education hidden">
                         <h2> Education</h2>
                         <div class="grid-container">
                             <div class="job">
@@ -198,12 +214,24 @@
                     <section id="skills" class="programming-skills hidden">
                         <h2>Programming Skills</h2>
                         <div class="container-icons">
-                            <div><img src="icons/css.svg" /></div>
-                            <div><img src="icons/html.svg" /></div>
-                            <div><img src="icons/javascript.svg" /></div>
-                            <div><img src="icons/github.svg" /></div>
-                            <div><img src="icons/adobe-xd.svg" /></div>
-                            <div><img src="icons/icons8-webflow.svg" /></div>
+                            <div>
+                                <img src="icons/css.svg" />
+                            </div>
+                            <div>
+                                <img src="icons/html.svg" />
+                            </div>
+                            <div>
+                                <img src="icons/javascript.svg" />
+                            </div>
+                            <div>
+                                <img src="icons/github.svg" />
+                            </div>
+                            <div>
+                                <img src="icons/adobe-xd.svg" />
+                            </div>
+                            <div>
+                                <img src="icons/icons8-webflow.svg" />
+                            </div>
                         </div>
                     </section>
 
@@ -226,12 +254,19 @@
                         </form>
                     </section>
 
-                    <section id="messages">
-                        <h2>"Bye for now!"</h2>
+                    <section id="messages" class="hidden">
+                        <h2>Your Message Displays Here:</h2>
+                        <h6>Heads up, this message will not be saved!</h6>
                         <ul id="ulMessage"></ul>
                     </section>
+                    
+                    <section id="gifDisplay">
+                        <h2>Bye for now!</h2>
+                        <img id="gif" src="" alt="">
+                    </section>
 
-                    <img class="hidden" id="gif" src="" alt="">
+                    
+
                     <section id="connect" class="connect hidden">
                         <h2>Let's Connect!</h2>
                         <ul class="links">
