@@ -11,18 +11,51 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+/*Bug highlights bugs*/
+let bug = document.getElementById("bug");
+let quote = document.getElementById("quote");
+bug.addEventListener('click', addRedWaves);
 
+function addRedWaves() {
+  quote.classList.toggle("bug-red-waves");
+}
+
+/*Squares shows extensions*/
+let squares = document.getElementById("squares");
+let extensionsMiddle = document.getElementById("extensions-middle");
+let normalMiddle = document.getElementById("middle-sidebar-content");
+
+squares.addEventListener('click', toggleExtensions);
+
+function toggleExtensions() {
+  extensionsMiddle.classList.toggle("hide-extensions");
+  normalMiddle.classList.toggle("hide-extensions");
+}
+
+
+/*Paper/Highligts HTML*/
+
+let paper = document.getElementById("paper");
+let htmlHighlight = document.getElementById("middle-html");
+let htmlHighlightMain = document.getElementById("main-section-html-tab");
+let mainContentWrapper = document.getElementById("main-content-wrapper");
+
+paper.addEventListener('click', highlightHtml);
+
+function highlightHtml() {
+  htmlHighlight.classList.toggle("gray-hover");
+  htmlHighlightMain.classList.toggle("gray-hover");
+  mainContentWrapper.classList.toggle("gray-background");
+  console.log("clicked");
+}
 
 
 /*Light and Dark Modes*/
 
 var toggleDay = document.getElementById("toggleDN");
-var paper = document.getElementById("paper");
-var bug = document.getElementById("bug");
-var squares = document.getElementById("squares");
+
 toggleDay.addEventListener('click', dayMode);
 
-console.log(toggleDay);
 
  function dayMode() {
   document.body.classList.toggle("light-mode");
@@ -80,6 +113,7 @@ for (let skill of skills) {
     let skillItem = document.createElement("div");
     let skillText = document.createElement("h3");
     skillText.innerText = skill; 
+    skillText.classList.add('skill-text');
     skillItem.append(skillText);
     skillGrid.append(skillItem);
     skillsSection.append(skillGrid);
@@ -99,15 +133,19 @@ function messageSubmit (event) {
     event.preventDefault();
 
     let name = event.target.usersName.value;
+    console.log(`this is name you are looking at ${name}`);
+    // name.classList.add('display-name');
     let email = event.target.usersEmail.value;
     let logMessage =  event.target.usersMessage.value;
     console.log(name, email, logMessage);
 
     form.reset();
     let newMessage = document.createElement("li");
+   newMessage.classList.add('message-display');
     newMessage.innerHTML = `<a href="mailto:${email}">${name}</a>: <span>${logMessage}</span>`;
 
     const removeButton = document.createElement('button');
+        removeButton.classList.add('remove-button');
         removeButton.innerText = 'remove';
         removeButton.type = 'button';
         removeButton.addEventListener('click', function () {
@@ -125,16 +163,22 @@ form.addEventListener("submit", messageSubmit);
 /*API photo*/
 
 const img = document.getElementById('gif');
+console.log(img);
 
 fetch('https://api.giphy.com/v1/gifs/translate?api_key=8SqL9qrrx5SB81E84CQ5S8dJMLft9VRf&s=cat', {mode: 'cors'})
 .then(function(response) {
   return response.json()
 })
 .then(function(response) {
-  img.src = response.data.images.original.url
+  console.log(response.data.images.original.url);
+  let shownImage = response.data.images.original.url;
+  img.src = shownImage;
+  console.log('working');
+  console.log(img.src);
 })
 .catch(e => {
-  console.log(e)
+  console.log(e);
+  console.log('not working');
 })
 
 /*Git Hub stuff*/
