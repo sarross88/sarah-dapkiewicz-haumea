@@ -105,9 +105,6 @@ let skillsSection = document.getElementById("skills");
 let skillGrid = document.createElement("div");
 skillGrid.classList.add('skill-grid');
 
-// let skillsList = document.createElement("ul");
-// skillsSection.appendChild(skillsList);
-
 
 for (let skill of skills) {
     let skillItem = document.createElement("div");
