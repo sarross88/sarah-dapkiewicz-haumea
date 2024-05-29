@@ -1,295 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
     <title>Sarah Dapkiewicz Portfolio</title>
-    <meta name="author" content="Sarah Dapkiewicz">
-</head>
+    <meta name="author" content="Sarah Dapkiewicz" />
+  </head>
 
-<body>
+  <body>
     <!--Extention of hamburger navbar-->
     <div class="off-screen-menu">
-        <div class="menu">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#submit-message">Connect</a>
+      <div class="menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#submit-message">Connect</a>
+      </div>
     </div>
-       </div>
     <!--This navbar serves as a placeholder to the main content, unseen-->
     <header class="navbar-under">
-        <div class="left"> <span class="blue">!DOCTYPE html</span> Sarah Dapkiewicz</div>
-        <nav class="right">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#submit-message">Connect</a>
-              <!--Hamburger Menu on small screens-->
-              <div class="blank ham-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+      <div class="left">
+        <span class="blue">!DOCTYPE html</span> Sarah Dapkiewicz
+      </div>
+      <nav class="right">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#submit-message">Connect</a>
+        <!--Hamburger Menu on small screens-->
+        <div class="blank ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
     <header class="navbar">
-        <div class="left"> <span class="blue">!DOCTYPE html</span> Sarah Dapkiewicz</div>
-        <nav class="right">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#submit-message">Connect</a>
-        </nav>
+      <div class="left">
+        <span class="blue">!DOCTYPE html</span> Sarah Dapkiewicz
+      </div>
+      <nav class="right">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#submit-message">Connect</a>
+      </nav>
     </header>
     <div class="all-content-wrapper">
-        <div class="flex-content-container">
-            <div class="left-icons">
-                <div class="left-images">
-                    <img id="paper" src="icons/icons8-paper-50.png" alt="pages icon">
-                    <img id="bug" src="icons/icons8-bug-48.png" alt="bug icon">
-                    <img id="squares" src="icons/icons8-four-squares-50.png" alt="extention icon">
-                    <img id="toggleDN" src="icons/icons8-sun.svg" alt="light mode icon">
-                </div>
-            </div>
-            <div class="middle-sidebar">
-                <div id="middle-sidebar-content">
-                <h6 class="middle-menu-text">EXPLORER</h6>
-                <h4 id="middle-html" class="middle-menu-text gray">index.html</h4>
-                <h4 class="middle-menu-text"><span>#</span>index.css</h4>
-                <h4 class="middle-menu-text">app.js</h4>
-                <h4 class="middle-menu-text">README.md</h4>
-            </div>
-                <div id="extensions-middle" class="hide-extensions"> 
-                    <h5 class="extenionMain">EXTENSIONS</h5>
-    
-                    <h5 class="extenionMain">INSTALLED<i class="arrow down"></i></h5>
-                    <h4 class="extenionHeader">Live Server</h4>
-                    <p class="extenionParagraph">Launch a ...<br>
-                    Prettier
-                    </p>
-                    <h4 class="extenionHeader">Prettier</h4>
-                    <p class="extenionParagraph">Code Formatter...<br>
-                    Ritwick Dey
-                    </p>
-                </div>
-            </div>
-            <main class="main-content">
-                <h4 id="main-section-html-tab" class="gray tab-html">index.html</h4>
-                <div id="main-content-wrapper" class="main-content-wrapper">
-
-                    <div class="hero-image">
-                        <div class="headshot-background">
-                        <img class="headshot" src="images/profilepic.png" alt="Profile Picture of Sarah">
-                        </div>
-                        <h1 class="violet"> Sarah Dapkiewicz's Portfolio</h1>
-                    </div>
-                    <section id="about" class="about hidden">
-                        <h2>About</h2>
-                        <p id="quote" class="quote"> Hello there! I'm a millennial with a curious mind and a knack
-                            for understanding both people and how things work. With a
-                            background in hygiene, where I've spent plenty of time
-                            in people's mouths and minds, I'm now venturing into
-                            the realm of programming. My goal? To bring a
-                            people-centered approach and a touch of empathy
-                            to the world of code!</p>
-                    </section>
-
-
-                    <section id="experience" class="experience hidden">
-                        <h2>Experience</h2>
-                        <div class="grid-container">
-                            <div class="job">
-                                <div class="job-details">
-                                    <div class="job-title title blue-light">Registered Dental Hygienist</div>
-                                    <div class="job-description business salmon">Hansen Dentistry</div>
-                                    <div class="location blue">Apex, NC</div>
-                                </div>
-                            </div>
-                            <div class="job">
-                                <div class="job-dates blue"> Jan 2020 - Present</div>
-                            </div>
-
-                            <div class="job">
-                                <div class="job-details">
-                                    <div class="job-title title blue-light">Registered Dental Hygienist</div>
-                                    <div class="job-description business salmon">Bass and Watson Dentistry</div>
-                                    <div class="location blue">Apex, NC</div>
-                                </div>
-                            </div>
-                            <div class="job">
-                                <div class="job-dates blue"> Jan 2020 - Present</div>
-                            </div>
-
-                            <div class="job">
-                                <div class="job-details">
-                                    <div class="job-title title blue-light">Planaroo</div>
-                                    <div class="job-description business salmon">CEO, Oversaw a drag-and-drop travel web
-                                        application
-                                        meant to help travelers better diplay their trip plans</div>
-                                    <div class="location blue">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job">
-                                <div class="job-dates blue"> Nov 2021 - Oct 2023</div>
-                            </div>
-                            <div class="job">
-                                <div class="job-details">
-                                    <div class="job-title title blue-light">Digital Marketing Representative</div>
-                                    <div class="job-description business salmon">Matika Irons, Marketed Matika Irons
-                                        Locumn
-                                        Tenens services to Dentists.</div>
-                                    <div class="location blue">Remote</div>
-                                </div>
-                            </div>
-                            <div class="job">
-                                <div class="job-dates blue"> Aug 2020 - Feb 2021</div>
-                            </div>
-
-                            <div class="job">
-                                <div class="job-details">
-                                    <div class="job-title title blue-light">Registered Dental Hygienist</div>
-                                    <div class="job-description business salmon">Chris Lindsey DDS</div>
-                                    <div class="location blue">Palo Alto, CA</div>
-                                </div>
-                            </div>
-                            <div class="job">
-                                <div class="job-dates blue"> Jun 2011 - Feb 2016</div>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <section id="interests" class="interests hidden">
-                        <h2>Interests</h2>
-                        <div class="container-icons small">
-                            <div><img src="icons/icons8-art-64.png" alt="icon art" /></div>
-                            <div><img src="icons/icons8-aries-60.png" alt="icon aries"/></div>
-                            <div><img src="icons/icons8-book-48.png" alt="icon book"/></div>
-                            <div><img src="icons/icons8-tooth-50.png"alt="icon dental" /></div>
-                            <div><img src="icons/icons8-chef-64.png" alt="icon chef"/></div>
-                            <div><img src="icons/icons8-enneagram-50.png"alt="icon ennegram-7"/></div>
-                            <div><img src="icons/icons8-mother-50.png" alt="icon mother"/></div>
-
-                        </div>
-                    </section>
-
-                    <section id="education" class="education hidden">
-                        <h2> Education</h2>
-                        <div class="grid-container">
-                            <div class="job">
-                                <div class="title blue-light">Code the Dream </div>
-                                <div class="degree-descript salmon"> Intro to Programming</div>
-                            </div>
-                            <div class="job">
-                                <div class="date blue">2024</div>
-                            </div>
-                            <div class="job">
-                                <div class="title blue-light">Simplilearn</div>
-                                <div class="degree-descript salmon">Digital Marketing Specialist</div>
-                            </div>
-                            <div class="job">
-                                <div class="date blue">2020-2021</div>
-                            </div>
-                            <div class="job">
-                                <div class="title blue-light">Univerity of the Pacific</div>
-                                <div class="degree-descript salmon">Bachelors of Science, RDH</div>
-                            </div>
-                            <div class="job">
-                                <div class="date blue">2006-2009</div>
-                            </div>
-                        </div>
-
-                    </section>
-
-                    <section id="skills" class="programming-skills hidden">
-                        <h2>Programming Skills</h2>
-                        <div class="container-icons">
-                            <div>
-                                <img src="icons/css.svg" alt="icon css"/>
-                            </div>
-                            <div>
-                                <img src="icons/html.svg" alt="icon html"/>
-                            </div>
-                            <div>
-                                <img src="icons/javascript.svg" alt="icon javascript"/>
-                            </div>
-                            <div>
-                                <img src="icons/github.svg" alt="icon github"/>
-                            </div>
-                            <div>
-                                <img src="icons/adobe-xd.svg" alt="icon adobe"/>
-                            </div>
-                            <div>
-                                <img src="icons/icons8-webflow.svg" alt="icon webflow"/>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <section id="projects" class="projects hidden">
-                        <h2>GitHub Projects</h2>
-                        <ul class="projects-list"></ul>
-                    </section>
-
-                    <section id="submit-message" class="submit-message hidden">
-                        <h2>Leave me a Message</h2>
-                        <form id="leave_message" action="">
-                            <label for="usersName">Name:</label><br>
-                            <input id="usersName" type="text" name="usersName" required><br>
-                            <label for="usersEmail">Email:</label><br>
-                            <input id="usersEmail" type="email" name="usersEmail" required><br>
-                            <label for="usersMessage">Message:</label> <br>
-                            <textarea id="usersMessage" name="usersMessage" cols="30" rows="10" required></textarea><br>
-                            <button id="btnSubmit" type="submit">Submit</button>
-                        </form>
-                    </section>
-
-                    <section id="messages" class="hidden">
-                        <h2>Your Message Displays Here:</h2>
-                        <h6>Heads up, this message will not be saved!</h6>
-                        <ul id="ulMessage"></ul>
-                    </section>
-                    
-                    <section id="gifDisplay">
-                        <h2>Bye for now!</h2>
-                        <img id="gif" src="" alt="gif of a cat">
-                    </section>
-
-                    
-
-                    <section id="connect" class="connect hidden">
-                        <h2>Let's Connect!</h2>
-                        <ul class="links">
-                            <li class="linkedin">
-                                <a href="https://www.linkedin.com/in/sarah-dapkiewicz-4b077566/"><img
-                                        src="icons/linkedin-orange.svg" alt="icon by icon-8 linkedIn image"></a>
-                            </li>
-                            <li class="github">
-                                <a href="https://github.com/sarross88"><img src="icons/github-orange.svg"
-                                        alt="icon by icon-8 github image"></a>
-                            </li>
-                            <li class="mail">
-                                <a href="mailto:sarahdapkiewicz@gmail.com"><img src="icons/mail-orange.png"
-                                        alt="icon by icon-8 mail image"></a>
-                            </li>
-                        </ul>
-                    </section>
-
-                </div>
-            </main>
+      <div class="flex-content-container">
+        <div class="left-icons">
+          <div class="left-images">
+            <img id="paper" src="icons/icons8-paper-50.png" alt="pages icon" />
+            <img id="bug" src="icons/icons8-bug-48.png" alt="bug icon" />
+            <img
+              id="squares"
+              src="icons/icons8-four-squares-50.png"
+              alt="extention icon"
+            />
+            <img
+              id="toggleDN"
+              src="icons/icons8-sun.svg"
+              alt="light mode icon"
+            />
+          </div>
         </div>
+        <div class="middle-sidebar">
+          <div id="middle-sidebar-content">
+            <h6 class="middle-menu-text">EXPLORER</h6>
+            <h4 id="middle-html" class="middle-menu-text gray">index.html</h4>
+            <h4 class="middle-menu-text"><span>#</span>index.css</h4>
+            <h4 class="middle-menu-text">app.js</h4>
+            <h4 class="middle-menu-text">README.md</h4>
+          </div>
+          <div id="extensions-middle" class="hide-extensions">
+            <h5 class="extenionMain">EXTENSIONS</h5>
+
+            <h5 class="extenionMain">INSTALLED<i class="arrow down"></i></h5>
+            <h4 class="extenionHeader">Live Server</h4>
+            <p class="extenionParagraph">
+              Launch a ...<br />
+              Prettier
+            </p>
+            <h4 class="extenionHeader">Prettier</h4>
+            <p class="extenionParagraph">
+              Code Formatter...<br />
+              Ritwick Dey
+            </p>
+          </div>
+        </div>
+        <main class="main-content">
+          <h4 id="main-section-html-tab" class="gray tab-html">index.html</h4>
+          <div id="main-content-wrapper" class="main-content-wrapper">
+            <div class="hero-image">
+              <div class="headshot-background">
+                <img
+                  class="headshot"
+                  src="images/profilepic.png"
+                  alt="Profile Picture of Sarah"
+                />
+              </div>
+              <h1 class="violet">Sarah Dapkiewicz's Portfolio</h1>
+            </div>
+            <section id="about" class="about hidden">
+              <h2>About</h2>
+              <p id="quote" class="quote">
+                Hello there! I'm a millennial with a curious mind and a knack
+                for understanding both people and how things work. With a
+                background in hygiene, where I've spent plenty of time in
+                people's mouths and minds, I'm now venturing into the realm of
+                programming. My goal? To bring a people-centered approach and a
+                touch of empathy to the world of code!
+              </p>
+            </section>
+
+            <section id="experience" class="experience hidden">
+              <h2>Experience</h2>
+              <div class="grid-container">
+                <div class="job">
+                  <div class="job-details">
+                    <div class="job-title title blue-light">
+                      Registered Dental Hygienist
+                    </div>
+                    <div class="job-description business salmon">
+                      Hansen Dentistry
+                    </div>
+                    <div class="location blue">Apex, NC</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="job-dates blue">Jan 2020 - Present</div>
+                </div>
+
+                <div class="job">
+                  <div class="job-details">
+                    <div class="job-title title blue-light">
+                      Registered Dental Hygienist
+                    </div>
+                    <div class="job-description business salmon">
+                      Bass and Watson Dentistry
+                    </div>
+                    <div class="location blue">Apex, NC</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="job-dates blue">Jan 2020 - Present</div>
+                </div>
+
+                <div class="job">
+                  <div class="job-details">
+                    <div class="job-title title blue-light">Planaroo</div>
+                    <div class="job-description business salmon">
+                      CEO, Oversaw a drag-and-drop travel web application meant
+                      to help travelers better diplay their trip plans
+                    </div>
+                    <div class="location blue">Remote</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="job-dates blue">Nov 2021 - Oct 2023</div>
+                </div>
+                <div class="job">
+                  <div class="job-details">
+                    <div class="job-title title blue-light">
+                      Digital Marketing Representative
+                    </div>
+                    <div class="job-description business salmon">
+                      Matika Irons, Marketed Matika Irons Locumn Tenens services
+                      to Dentists.
+                    </div>
+                    <div class="location blue">Remote</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="job-dates blue">Aug 2020 - Feb 2021</div>
+                </div>
+
+                <div class="job">
+                  <div class="job-details">
+                    <div class="job-title title blue-light">
+                      Registered Dental Hygienist
+                    </div>
+                    <div class="job-description business salmon">
+                      Chris Lindsey DDS
+                    </div>
+                    <div class="location blue">Palo Alto, CA</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="job-dates blue">Jun 2011 - Feb 2016</div>
+                </div>
+              </div>
+            </section>
+
+            <section id="interests" class="interests hidden">
+              <h2>Interests</h2>
+              <div class="container-icons small">
+                <div><img src="icons/icons8-art-64.png" alt="icon art" /></div>
+                <div>
+                  <img src="icons/icons8-aries-60.png" alt="icon aries" />
+                </div>
+                <div>
+                  <img src="icons/icons8-book-48.png" alt="icon book" />
+                </div>
+                <div>
+                  <img src="icons/icons8-tooth-50.png" alt="icon dental" />
+                </div>
+                <div>
+                  <img src="icons/icons8-chef-64.png" alt="icon chef" />
+                </div>
+                <div>
+                  <img
+                    src="icons/icons8-enneagram-50.png"
+                    alt="icon ennegram-7"
+                  />
+                </div>
+                <div>
+                  <img src="icons/icons8-mother-50.png" alt="icon mother" />
+                </div>
+              </div>
+            </section>
+
+            <section id="education" class="education hidden">
+              <h2>Education</h2>
+              <div class="grid-container">
+                <div class="job">
+                  <div class="title blue-light">Code the Dream</div>
+                  <div class="degree-descript salmon">Intro to Programming</div>
+                </div>
+                <div class="job">
+                  <div class="date blue">2024</div>
+                </div>
+                <div class="job">
+                  <div class="title blue-light">Simplilearn</div>
+                  <div class="degree-descript salmon">
+                    Digital Marketing Specialist
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="date blue">2020-2021</div>
+                </div>
+                <div class="job">
+                  <div class="title blue-light">Univerity of the Pacific</div>
+                  <div class="degree-descript salmon">
+                    Bachelors of Science, RDH
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="date blue">2006-2009</div>
+                </div>
+              </div>
+            </section>
+
+            <section id="skills" class="programming-skills hidden">
+              <h2>Programming Skills</h2>
+              <div class="container-icons">
+                <div>
+                  <img src="icons/css.svg" alt="icon css" />
+                </div>
+                <div>
+                  <img src="icons/html.svg" alt="icon html" />
+                </div>
+                <div>
+                  <img src="icons/javascript.svg" alt="icon javascript" />
+                </div>
+                <div>
+                  <img src="icons/github.svg" alt="icon github" />
+                </div>
+                <div>
+                  <img src="icons/adobe-xd.svg" alt="icon adobe" />
+                </div>
+                <div>
+                  <img src="icons/icons8-webflow.svg" alt="icon webflow" />
+                </div>
+              </div>
+            </section>
+
+            <section id="projects" class="projects hidden">
+              <h2>GitHub Projects</h2>
+              <ul class="projects-list"></ul>
+            </section>
+
+            <section id="submit-message" class="submit-message hidden">
+              <h2>Leave me a Message</h2>
+              <form id="leave_message" action="">
+                <label for="usersName">Name:</label><br />
+                <input
+                  id="usersName"
+                  type="text"
+                  name="usersName"
+                  required
+                /><br />
+                <label for="usersEmail">Email:</label><br />
+                <input
+                  id="usersEmail"
+                  type="email"
+                  name="usersEmail"
+                  required
+                /><br />
+                <label for="usersMessage">Message:</label> <br />
+                <textarea
+                  id="usersMessage"
+                  name="usersMessage"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea
+                ><br />
+                <button id="btnSubmit" type="submit">Submit</button>
+              </form>
+            </section>
+
+            <section id="messages" class="hidden">
+              <h2>Your Message Displays Here:</h2>
+              <h6>Heads up, this message will not be saved!</h6>
+              <ul id="ulMessage"></ul>
+            </section>
+
+            <section id="gifDisplay">
+              <h2>Bye for now!</h2>
+              <img id="gif" src="" alt="gif of a cat" />
+            </section>
+
+            <section id="connect" class="connect hidden">
+              <h2>Let's Connect!</h2>
+              <ul class="links">
+                <li class="linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/sarah-dapkiewicz-4b077566/"
+                    ><img
+                      src="icons/linkedin-orange.svg"
+                      alt="icon by icon-8 linkedIn image"
+                  /></a>
+                </li>
+                <li class="github">
+                  <a href="https://github.com/sarross88"
+                    ><img
+                      src="icons/github-orange.svg"
+                      alt="icon by icon-8 github image"
+                  /></a>
+                </li>
+                <li class="mail">
+                  <a href="mailto:sarahdapkiewicz@gmail.com"
+                    ><img
+                      src="icons/mail-orange.png"
+                      alt="icon by icon-8 mail image"
+                  /></a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </main>
+      </div>
     </div>
     <script src="JS/index.js"></script>
-</body>
-
+  </body>
 </html>
